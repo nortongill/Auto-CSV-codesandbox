@@ -5,10 +5,8 @@ import {Form, Field} from "react-final-form";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import TextField from "material-ui/TextField";
-// import Toggle from "material-ui/Toggle";
 import Select from "react-select";
 import country from "./country";
-//import Checkbox from "@material-ui/core";
 import {Checkbox} from "final-form-material-ui";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
@@ -21,29 +19,6 @@ const TextFieldAdapter = ({input, meta, ...rest}) => (
         errorText={meta.touched ? meta.error : ""}
     />
 );
-
-// const CheckboxWrapper = ({
-//   input: {checked, name, onChange, ...restInput},
-//   meta,
-//   ...rest
-// }) => (
-//   <Checkbox
-//     {...rest}
-//     name={name}
-//     inputProps={restInput}
-//     onChange={onChange}
-//     checked={checked}
-//   />
-// );
-
-// const ToggleAdapter = ({input: {onChange, value}, label, ...rest}) => (
-//   <Toggle
-//     label={label}
-//     toggled={!!value}
-//     onToggle={(event, isInputChecked) => onChange(isInputChecked)}
-//     {...rest}
-//   />
-// );
 
 const ReactSelectAdapter = ({input, ...rest}) => (
     <Select {...input} {...rest} searchable />
