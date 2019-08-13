@@ -64,6 +64,7 @@ const App = () => (
                                 validate={required}
                                 hintText="Service Name"
                                 floatingLabelText="Service Name"
+                                initialValue=""
                             />
                         </div>
 
